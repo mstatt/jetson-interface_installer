@@ -1,4 +1,4 @@
-# WebPage Scraper
+# Jetson Interface Installer for Nano 4GB
 
 <div id="top"></div>
 <div align="center">
@@ -20,7 +20,7 @@
   </a>
 
   <h3 align="center">
-WebPage scraper</h3>
+Nvidia Jetson Nano Interface Installer</h3>
 
   <p align="center">
     A simple script to install and build the jetson-interface repository on the Nvidia Jetson Nano.
@@ -91,7 +91,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
   sudo  chmod u+x jetson-interface.sh
  ```
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!-- Launch the installer -->
 ## Launch the installer
 
@@ -102,13 +102,34 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 
 
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!-- OUTPUT -->
 ## Output
 
 Once completed your system will reboot. You can log back in and you are ready to go.
 
 
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+<!--Extra Commands -->
+## Extra Commands to know
+ Max performance  
+ ```sh 
+ sudo jetson_clocks
+ ```
+ To view system performance:
+  ```sh
+ sudo jtop
+ ```
+ To change the fan speed: values range from 0-255:
+ The command below sets fan to ~50%
+  ```sh
+ sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
+ The command below sets fan to 100%
+  ```
+  ```sh
+ sudo sh -c 'echo 254 > /sys/devices/pwm-fan/target_pwm'
+  ```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
