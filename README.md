@@ -2,11 +2,10 @@
 
 <div id="top"></div>
 <div align="center">
-  
-![](https://img.shields.io/badge/Language-Python-blue)
+![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) 
 ![](https://img.shields.io/badge/License-MIT-blue)
-![](https://img.shields.io/github/issues/mstatt/Emotion_Detection)
-![](https://img.shields.io/github/forks/mstatt/Emotion_Detection)
+![](https://img.shields.io/github/issues/mstatt/jetson-interface_installer)
+![](https://img.shields.io/github/forks/mstatt/jetson-interface_installer)
   
 </div>
 
@@ -75,8 +74,30 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Set Up Commands -->
+## Set Up commands and help
+ This is assuming that your user has been added to the sudo group
+ if not you can run the followiing command to add them:
+ ```sh
+  sudo usermod -a -G sudo <username>
+ ```
+ The command below adds the user to the root users group:
+ ```sh
+  sudo usermod -a -G root <username>
+ ```
+ Prior to running the scropt make it executable with the terminal command below:
+ ```sh
+  sudo  chmod u+x jetson-interface.sh
+ ```
+
+
+<!-- Launch the installer -->
+## Launch the installer
+
+ To execute the installer after the previous prereqs have been extablished execute toe following command from the terminal running inside the same directory as the script:
+  ```sh
+ sudo ./jetson-interface.sh
+ ```
 
 
 
@@ -84,7 +105,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 <!-- OUTPUT -->
 ## Output
 
-In the scrapes directory you should see a file titled something like "6a314ebb-af03-431b-96e6-1ac3f187c151.txt". In there should be the text contents of the webpage set in the URL parameter.
+Once completed your system will reboot. You can log back in and you are ready to go.
 
 
 
@@ -120,4 +141,4 @@ Project Link: [https://github.com/mstatt/jetson-interface_installer]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [license-shield]: assets/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f6c6963656e73652f6f74686e65696c647265772f426573742d524541444d452d54656d706c6174652e7376673f7374796c653d666f722d7468652d6261646765.svg?style=for-the-badge
-[license-url]: https://github.com/mstatt/Emotion_Detection/blob/main/LICENSE.txt
+[license-url]: https://github.com/mstatt/jetson-interface_installer/blob/main/LICENSE.txt
