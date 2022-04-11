@@ -2,7 +2,7 @@
 
 <div id="top"></div>
 <div align="center">
-![](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) 
+![](https://img.shields.io/badge/BASH-LINUX-brightgreen) 
 ![](https://img.shields.io/badge/License-MIT-blue)
 ![](https://img.shields.io/github/issues/mstatt/jetson-interface_installer)
 ![](https://img.shields.io/github/forks/mstatt/jetson-interface_installer)
