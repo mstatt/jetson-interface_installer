@@ -77,8 +77,9 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 
 <!-- Set Up Commands -->
 ## Set Up commands and help
- This is assuming that your user has been added to the sudo group
- if not you can run the followiing command to add them:
+ This is assuming that your user has been added to the sudo group.
+ 
+ if not you can run the following command to add them:
  ```sh
   sudo usermod -a -G sudo <username>
  ```
