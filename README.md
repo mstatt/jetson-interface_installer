@@ -33,7 +33,7 @@ Nvidia Jetson Nano Interface Installer</h3>
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Web Scraper Application by Falcons.ai
+## About The Jetson Nano Interface installer by Falcons.ai
 
 This script is designed to download and build the jetson -interface repository for you to have the basics for development and testing on the Nvidia Jetson nano.
 
@@ -48,7 +48,7 @@ Use this `README.md` to get started.
 
 ### Built With
 
-This was developed using a simple bash script.
+This was developed using a simple ![](https://img.shields.io/badge/BASH-LINUX-brightgreen) script.
 
 
 
