@@ -92,6 +92,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- Launch the installer -->
 ## Launch the installer
 
@@ -103,6 +104,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <!-- OUTPUT -->
 ## Output
 
