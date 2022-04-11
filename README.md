@@ -23,9 +23,9 @@
 Nvidia Jetson Nano Interface Installer</h3>
 
   <p align="center">
-    A simple script to install and build the jetson-interface repository on the Nvidia Jetson Nano.
+    A simple script to install and build the jetson-interface repository on the Nvidia Jetson Nano. The actual repository for the Jetson-Interface source files are located here: https://github.com/dusty-nv/jetson-inference
     <br />
-
+Please keep this site bookmarked as there are tutorials and a lot of information for Nano developers within.
   </p>
 </div>
 
@@ -116,6 +116,8 @@ Once completed your system will reboot. You can log back in and you are ready to
 
 <!--Extra Commands -->
 ## Extra Commands to know
+
+Below are some commands to know once the instalation is completed.
  Max performance  
  ```sh 
  sudo jetson_clocks
@@ -128,8 +130,9 @@ Once completed your system will reboot. You can log back in and you are ready to
  The command below sets fan to ~50%
   ```sh
  sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
+   ```
  The command below sets fan to 100%
-  ```
+
   ```sh
  sudo sh -c 'echo 254 > /sys/devices/pwm-fan/target_pwm'
   ```
