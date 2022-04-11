@@ -118,7 +118,7 @@ Once completed your system will reboot. You can log back in and you are ready to
 <!--Extra Commands -->
 ## Extra Commands to know
 
-Below are some commands to know once the instalation is completed.
+Below are some commands to know once the instalation is completed.<br />
  Max performance  
  ```sh 
  sudo jetson_clocks
