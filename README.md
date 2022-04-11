@@ -118,8 +118,8 @@ Once completed your system will reboot. You can log back in and you are ready to
 <!--Extra Commands -->
 ## Extra Commands to know
 
-Below are some commands to know once the instalation is completed.<br />
- Max performance  
+Below are some commands to know once the instalation is completed.<br /><br />
+ Max performance: 
  ```sh 
  sudo jetson_clocks
  ```
@@ -128,11 +128,11 @@ Below are some commands to know once the instalation is completed.<br />
  sudo jtop
  ```
  To change the fan speed: values range from 0-255:
- The command below sets fan to ~50%
+ The command below sets fan to ~50%:
   ```sh
  sudo sh -c 'echo 128 > /sys/devices/pwm-fan/target_pwm'
    ```
- The command below sets fan to 100%
+ The command below sets fan to 100%:
 
   ```sh
  sudo sh -c 'echo 254 > /sys/devices/pwm-fan/target_pwm'
