@@ -98,6 +98,11 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 ```sh
 sudo free -m
 ```
+If you do not something resembling:<br/><br/> Swap: 4095 <br/><br/> You should increase the sawp file size.<br/><br/>
+
+
+
+
  Increase Swap Memory in Jetson Nano<br /><br />
  Disable ZRAM:
 ```sh
