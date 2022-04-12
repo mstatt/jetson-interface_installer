@@ -94,7 +94,10 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
   sudo  chmod u+x jetson-interface.sh
  ```
 
-
+** You may need to increase the SWAP file size to increase performance, you can check the swap size with the following command:
+```sh
+sudo free -m
+```
  Increase Swap Memory in Jetson Nano<br /><br />
  Disable ZRAM:
 ```sh
@@ -114,9 +117,14 @@ sudo mkswap /mnt/4GB.swap
 ```sh
 sudo echo "/mnt/4GB.swap swap swap defaults 0 0" >> /etc/fstab
 ```
-
-
-
+** If you get a permissions error running the above command you may need to log in as root and the run it. Once complete restart the Nano with:
+```sh
+sudo shutdown -r now
+```
+Once logged back in run the following command again to check Sawp file size.
+```sh
+sudo free -m
+```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
