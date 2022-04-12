@@ -98,7 +98,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 ```sh
 sudo free -m
 ```
-If you do not see something resembling:<br/><br/> Swap: 4095 <br/><br/> You should increase the sawp file size.<br/><br/>
+If you do not see something resembling: Swap: 4095  You should increase the sawp file size.<br/><br/>
 
 
 
