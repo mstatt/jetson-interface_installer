@@ -117,7 +117,7 @@ sudo mkswap /mnt/4GB.swap
 ```sh
 sudo echo "/mnt/4GB.swap swap swap defaults 0 0" >> /etc/fstab
 ```
-** If you get a permissions error running the above command you may need to log in as root and the run it. Once complete restart the Nano with:
+** If you get a permissions error running the above command you may need to log in as root and the run it. <br/>Once complete restart the Nano with:
 ```sh
 sudo shutdown -r now
 ```
@@ -125,7 +125,7 @@ Once logged back in run the following command again to check Sawp file size.
 ```sh
 sudo free -m
 ```
-
+You should now see something resembling:<br/><br/> Swap: 4095
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
