@@ -89,7 +89,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
  ```sh
   sudo usermod -a -G root <username>
  ```
- Prior to running the scropt make it executable with the terminal command below:
+ Prior to running the script make it executable with the terminal command below:
  ```sh
   sudo  chmod u+x jetson-interface.sh
  ```
