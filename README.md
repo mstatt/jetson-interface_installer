@@ -81,18 +81,43 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
 ## Set Up commands and help
  This is assuming that your user has been added to the sudo group.
  
- if not you can run the following command to add them:
+ # If not you can run the following command to add them:
  ```sh
   sudo usermod -a -G sudo <username>
  ```
- The command below adds the user to the root users group:
+ # The command below adds the user to the root users group:
  ```sh
   sudo usermod -a -G root <username>
  ```
- Prior to running the script make it executable with the terminal command below:
+ # Prior to running the script make it executable with the terminal command below:
  ```sh
   sudo  chmod u+x jetson-interface.sh
  ```
+
+
+# Increase Swap Memory in Jetson Nano
+# Disable ZRAM:
+```sh
+sudo systemctl disable nvzramconfig
+```
+# Create 4GB swap file
+```sh
+sudo fallocate -l 4G /mnt/4GB.swap
+```
+```sh
+sudo chmod 600 /mnt/4GB.swap
+```
+```sh
+sudo mkswap /mnt/4GB.swap
+```
+# Append the following line to /etc/fstab
+```sh
+sudo echo "/mnt/4GB.swap swap swap defaults 0 0" >> /etc/fstab
+```
+
+
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
