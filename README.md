@@ -94,7 +94,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
   sudo  chmod u+x jetson-interface.sh
  ```
 
-** You may need to increase the SWAP file size to increase performance, you can check the swap size with the following command:
+** You may need to increase the SWAP file size to increase performance (As suggested by Nvidia), you can check the swap size with the following command:
 ```sh
 sudo free -m
 ```
@@ -103,7 +103,7 @@ If you do not something resembling:<br/><br/> Swap: 4095 <br/><br/> You should i
 
 
 
- Increase Swap Memory in Jetson Nano<br /><br />
+ To increase Swap Memory in Jetson Nano<br /><br />
  Disable ZRAM:
 ```sh
 sudo systemctl disable nvzramconfig
