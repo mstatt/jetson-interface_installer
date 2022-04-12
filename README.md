@@ -95,7 +95,7 @@ Please follow the steps as outlined on the Official Nvidia Jetson Nano Developer
  ```
 
 
- Increase Swap Memory in Jetson Nano
+ Increase Swap Memory in Jetson Nano<br /><br />
  Disable ZRAM:
 ```sh
 sudo systemctl disable nvzramconfig
