@@ -45,11 +45,10 @@ cd /opt/nvidia/deepstream/deepstream-6.1/
 sudo ./install.sh
 sudo ldconfig
 
-git clone https://github.com/edenhill/librdkafka.git
 
 sudo mkdir -p /opt/nvidia/deepstream/deepstream-6.1/lib
 sudo cp /usr/local/lib/librdkafka* /opt/nvidia/deepstream/deepstream-6.1/lib
 
-sudo apt-get install ./deepstream-6.1_6.1.1-1_arm64.deb
+#sudo apt-get install ./deepstream-6.1_6.1.1-1_arm64.deb
 sudo nvpmodel -m 0
 sudo jetson_clocks
