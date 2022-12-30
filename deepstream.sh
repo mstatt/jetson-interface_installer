@@ -1,3 +1,5 @@
+#!/bin/sh
+#---------------------------------------------------------------
 sudo apt install \
 libssl1.1 \
 libgstreamer1.0-0 \
@@ -13,7 +15,18 @@ libyaml-cpp-dev \
 gcc \
 make \
 git \
-python3
+python3 \
+python3-numpy \
+python3-pip
+
+
+sudo -H pip3 install -U jetson-stats
+sudo apt-get install jtop -y
+# Adding Sublime text editor
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update 
+sudo apt-get install -y sublime-text
 
 wget https://developer.download.nvidia.com/compute/cuda/11.7.1/local_installers/cuda-repo-debian11-11-7-local_11.7.1-515.65.01-1_amd64.deb
 sudo dpkg -i cuda-repo-debian11-11-7-local_11.7.1-515.65.01-1_amd64.deb
@@ -52,3 +65,7 @@ sudo cp /usr/local/lib/librdkafka* /opt/nvidia/deepstream/deepstream-6.1/lib
 #sudo apt-get install ./deepstream-6.1_6.1.1-1_arm64.deb
 sudo nvpmodel -m 0
 sudo jetson_clocks
+
+# Update again and reboot
+sudo apt-get update
+sudo shutdown -r now
