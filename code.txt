@@ -1,0 +1,21 @@
+sudo pip3 install -U pip
+sudo pip3 install -U numpy grpcio absl-py py-cpuinfo psutil portpicker six mock requests gast h5py astor termcolor protobuf keras-applications keras-preprocessing wrapt google-pasta setuptools testresources
+
+- Installing TensorFlow
+sudo pip3 install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+
+- Upgrade TensorFlow
+sudo pip3 install --upgrade --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v42 tensorflow-gpu
+
+sudo pip3 install keras jupyter pillow matplotlib
+
+python3 -c 'import numpy; print(numpy.__version__)'
+python3 -c 'import tensorflow; print(tensorflow.__version__)'
+python3 -c 'import keras; print(keras.__version__)'
+python3 -c 'import jupyter; print(jupyter.__version__)'
+python3 -c 'import PIL; print(PIL.__version__)'
+python3 -c 'import matplotlib; print(matplotlib.__version__)'
+
+git clone https://github.com/NVIDIA-AI-IOT/jetcam
+cd jetcam
+pip3 install ./ --user
