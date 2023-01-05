@@ -1,0 +1,2 @@
+0 smoking
+1 not_smoking
