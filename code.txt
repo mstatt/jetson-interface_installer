@@ -21,5 +21,6 @@ cd jetcam
 pip3 install ./ --user
 
 
+smoking-detection-08o4g
 
-api_key=6LjDjjXzTfbqHlIfckmu
+
