@@ -19,3 +19,7 @@ python3 -c 'import matplotlib; print(matplotlib.__version__)'
 git clone https://github.com/NVIDIA-AI-IOT/jetcam
 cd jetcam
 pip3 install ./ --user
+
+
+
+api_key=6LjDjjXzTfbqHlIfckmu
