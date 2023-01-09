@@ -3,7 +3,7 @@
 <div id="top"></div>
 <div align="center">
 
-[![Generic badge](https://img.shields.io/badge/FALCONS.AI-Edge AI-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/FALCONS.AI-Edge_AI-red.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/NVIDIA-Jetson-brightgreen.svg)](https://shields.io/)
 [![Generic badge](https://img.shields.io/badge/SHELL-Bash-orange.svg)](https://shields.io/)
  
