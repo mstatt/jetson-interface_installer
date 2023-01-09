@@ -4,10 +4,8 @@
 <div align="center">
 
 [![Generic badge](https://img.shields.io/badge/FALCONS.AI-NLP-red.svg)](https://shields.io/)
-![](https://img.shields.io/badge/License-MIT-blue)
-![](https://img.shields.io/github/issues/mstatt/jetson-interface_installer)
-![](https://img.shields.io/github/forks/mstatt/jetson-interface_installer)
-![](https://img.shields.io/badge/BASH-LINUX-brightgreen)
+[![Generic badge](https://img.shields.io/badge/NVIDIA-Jetson-brightgreen.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/SHELL-Bash-orange.svg)](https://shields.io/)
  
 </div>
 
