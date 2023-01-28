@@ -1,0 +1,31 @@
+base64_string = $(base64 "your_local_image")
+curl -d '{"base64str": $base64_string, "model_id": "1c659d8a-a4d0-45f3-bbc2-3c6ef74d8702", "conf_thresh": 0.4, "nms_thresh": 0.45}' -H "Content-Type: application/json" -X PUT https://apiv2.chooch.ai/predict?api_key=a851fe12-d018-483b-ac79-d09a7e745d64
+
+
+
+
+
+
+
+
+
+import requests
+import base64
+import io
+from PIL import Image
+import json
+ 
+image = Image.open("your_local_image").convert("RGB")
+# Convert to a JPEG Buffer
+buffered = io.BytesIO()
+image.save(buffered, quality=90, format="JPEG")
+# Base 64 Encode
+base64_string = base64.b64encode(buffered.getvalue())
+base64_string = base64_string.decode("ascii")
+ 
+payload = { "base64str": base64_string, "model_id": '1c659d8a-a4d0-45f3-bbc2-3c6ef74d8702', "conf_thresh": 0.4, "nms_thresh": 0.45 }
+api_url = 'https://apiv2.chooch.ai/predict?api_key=a851fe12-d018-483b-ac79-d09a7e745d64'
+response = requests.put(api_url, data=json.dumps(payload))
+json_data = json.loads(response.content)
+ 
+print(json_data)
